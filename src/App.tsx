@@ -96,11 +96,11 @@ export default function App() {
                       Gemini 3.5 Flash Entegrasyonu
                     </span>
                     <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200/80 px-3 py-1.5 rounded-full">
-                      <span className="h-2 w-2 rounded-full bg-indigo-500" />
+                      <span className="h-2 w-2 rounded-full bg-teal-500" />
                       AWS S3 Hazır Depolama Katmanı
                     </span>
                     <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200/80 px-3 py-1.5 rounded-full">
-                      <span className="h-2 w-2 rounded-full bg-violet-500" />
+                      <span className="h-2 w-2 rounded-full bg-green-500" />
                       Parametrik MySQL/SQLAlchemy Uyumu
                     </span>
                   </div>

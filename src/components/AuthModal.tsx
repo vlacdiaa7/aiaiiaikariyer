@@ -79,7 +79,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
         <div className="p-8">
           {/* Header */}
           <div className="text-center mb-6">
-            <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-3">
+            <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 mb-3">
               {role === 'candidate' ? <UserIcon className="h-5 w-5" /> : <Building className="h-5 w-5" />}
             </div>
             <h3 className="font-display text-xl font-bold text-slate-900">
@@ -93,7 +93,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
           {/* Quick Demo Accout buttons */}
           <div className="mb-6 rounded-2xl bg-slate-50 p-4 border border-slate-100">
             <p className="text-xs font-semibold text-slate-700 mb-2 flex items-center gap-1">
-              <Sparkles className="h-3.5 w-3.5 text-indigo-500" />
+              <Sparkles className="h-3.5 w-3.5 text-emerald-500" />
               Demo Hesaplarla Hızlı Başla:
             </p>
             <div className="grid grid-cols-2 gap-2">
@@ -102,7 +102,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
                 onClick={() => fillDemoCreds('cand')}
                 className="flex items-center justify-center gap-1 bg-white hover:bg-slate-50 border border-slate-150 text-xs font-medium py-2 px-3 rounded-lg text-slate-700 transition"
               >
-                <UserIcon className="h-3.5 w-3.5 text-indigo-500" />
+                <UserIcon className="h-3.5 w-3.5 text-emerald-500" />
                 Aday Girişi
               </button>
               <button
@@ -110,7 +110,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
                 onClick={() => fillDemoCreds('empl')}
                 className="flex items-center justify-center gap-1 bg-white hover:bg-slate-50 border border-slate-150 text-xs font-medium py-2 px-3 rounded-lg text-slate-700 transition"
               >
-                <Building className="h-3.5 w-3.5 text-indigo-500" />
+                <Building className="h-3.5 w-3.5 text-emerald-500" />
                 Şirket Girişi
               </button>
             </div>
@@ -122,7 +122,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
               <button
                 type="button"
                 onClick={() => setRole('candidate')}
-                className={`flex-1 flex items-center justify-center gap-1 py-1.5 text-xs font-medium rounded-lg transition ${role === 'candidate' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                className={`flex-1 flex items-center justify-center gap-1 py-1.5 text-xs font-medium rounded-lg transition ${role === 'candidate' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
                 <UserIcon className="h-3.5 w-3.5" />
                 İş Arayan
@@ -130,7 +130,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
               <button
                 type="button"
                 onClick={() => setRole('employer')}
-                className={`flex-1 flex items-center justify-center gap-1 py-1.5 text-xs font-medium rounded-lg transition ${role === 'employer' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                className={`flex-1 flex items-center justify-center gap-1 py-1.5 text-xs font-medium rounded-lg transition ${role === 'employer' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
                 <Building className="h-3.5 w-3.5" />
                 İş Veren
@@ -160,7 +160,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     placeholder="Ayşe Yılmaz"
-                    className="block w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-9 pr-4 text-sm text-slate-900 focus:border-indigo-500 outline-none transition"
+                    className="block w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-9 pr-4 text-sm text-slate-900 focus:border-emerald-500 outline-none transition"
                   />
                 </div>
               </div>
@@ -178,7 +178,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="isim@sirket.com"
-                  className="block w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-9 pr-4 text-sm text-slate-900 focus:border-indigo-500 outline-none transition"
+                  className="block w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-9 pr-4 text-sm text-slate-900 focus:border-emerald-500 outline-none transition"
                 />
               </div>
             </div>
@@ -195,7 +195,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-9 pr-4 text-sm text-slate-900 focus:border-indigo-500 outline-none transition"
+                  className="block w-full rounded-lg border border-slate-200 bg-white py-2.5 pl-9 pr-4 text-sm text-slate-900 focus:border-emerald-500 outline-none transition"
                 />
               </div>
             </div>
@@ -203,7 +203,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full flex items-center justify-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 px-4 shadow-sm transition disabled:opacity-50 cursor-pointer"
+              className="w-full flex items-center justify-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 shadow-sm transition disabled:opacity-50 cursor-pointer"
             >
               {isLoading ? (
                 <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
@@ -231,7 +231,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ initialRole, onClose, onSu
                 setIsLogin(!isLogin);
                 setError('');
               }}
-              className="font-semibold text-indigo-600 hover:text-indigo-800"
+              className="font-semibold text-emerald-600 hover:text-emerald-800"
             >
               {isLogin ? 'Yeni hesap açın' : 'Giriş yapın'}
             </button>

@@ -22,7 +22,7 @@ export const Testimonials: React.FC = () => {
               className="flex flex-col justify-between rounded-3xl bg-white p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-150"
             >
               <div className="relative">
-                <Quote className="absolute -top-3 -left-2 h-8 w-8 text-indigo-500/10" />
+                <Quote className="absolute -top-3 -left-2 h-8 w-8 text-emerald-500/10" />
                 <p className="text-slate-600 italic leading-relaxed text-sm relative z-10">
                   {testimonial.text}
                 </p>

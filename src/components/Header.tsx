@@ -14,15 +14,15 @@ export const Header: React.FC<HeaderProps> = ({ currentUser, onLogout, onOpenAut
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <div className="flex items-center space-x-2.5 cursor-pointer">
-          <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white shadow-sm">
+          <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-white shadow-sm">
             <Briefcase className="h-5 w-5" />
-            <div className="absolute -top-1 -right-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-indigo-400 text-[8px] font-bold text-white animate-pulse">
+            <div className="absolute -top-1 -right-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-emerald-400 text-[8px] font-bold text-white animate-pulse">
               AI
             </div>
           </div>
           <div>
             <h1 className="font-display text-lg font-bold tracking-tight text-slate-900 flex items-center">
-              Kariyer<span className="text-indigo-600 ml-1">Kapısı</span>
+              Kariyer<span className="text-emerald-600 ml-1">Kapısı</span>
             </h1>
             <p className="text-[9px] font-medium tracking-wider text-slate-400 uppercase">YAPAY ZEKA DESTEKLİ KARİYER</p>
           </div>
@@ -37,12 +37,12 @@ export const Header: React.FC<HeaderProps> = ({ currentUser, onLogout, onOpenAut
                 <span className="text-xs text-slate-500 flex items-center gap-1">
                   {currentUser.role === 'employer' ? (
                     <>
-                      <Building className="h-3 w-3 text-indigo-500" />
+                      <Building className="h-3 w-3 text-emerald-500" />
                       İş Veren Paneli
                     </>
                   ) : (
                     <>
-                      <UserIcon className="h-3 w-3 text-indigo-500" />
+                      <UserIcon className="h-3 w-3 text-emerald-500" />
                       Aday Paneli
                     </>
                   )}
@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ currentUser, onLogout, onOpenAut
                   referrerPolicy="no-referrer"
                 />
               ) : (
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 font-bold text-sm">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 font-bold text-sm">
                   {currentUser.fullName.charAt(0).toUpperCase()}
                 </div>
               )}
@@ -74,13 +74,13 @@ export const Header: React.FC<HeaderProps> = ({ currentUser, onLogout, onOpenAut
             <div className="flex items-center space-x-2">
               <button
                 onClick={() => onOpenAuth('candidate')}
-                className="text-sm font-medium text-slate-600 hover:text-indigo-600 px-3 py-1.5 rounded-lg hover:bg-slate-50 transition-all duration-150"
+                className="text-sm font-medium text-slate-600 hover:text-emerald-600 px-3 py-1.5 rounded-lg hover:bg-slate-50 transition-all duration-150"
               >
                 İş Ara (Aday)
               </button>
               <button
                 onClick={() => onOpenAuth('employer')}
-                className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-1.5 rounded-lg shadow-sm transition-all duration-150"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium px-4 py-1.5 rounded-lg shadow-sm transition-all duration-150"
               >
                 İlan Yayınla (İş Veren)
               </button>

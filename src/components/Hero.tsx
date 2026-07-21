@@ -19,9 +19,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuth }) => {
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center space-x-1.5 rounded-full bg-indigo-50/70 border border-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700 mb-6"
+            className="inline-flex items-center space-x-1.5 rounded-full bg-emerald-50/70 border border-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 mb-6"
           >
-            <Sparkles className="h-3.5 w-3.5 text-indigo-600" />
+            <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
             <span>Kariyer Kapısı Akıllı Eşleştirme Motoru V3.0 Aktif</span>
           </motion.div>
 
@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuth }) => {
             className="font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl max-w-4xl mx-auto leading-[1.15]"
           >
             CV'nizi Yükleyin,{' '}
-            <span className="text-indigo-600">
+            <span className="text-emerald-600">
               Size En Uygun İşi
             </span>{' '}
             Yapay Zeka Bulsun!
@@ -58,9 +58,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuth }) => {
           >
             <button
               onClick={() => onOpenAuth('candidate')}
-              className="group relative flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 transition-all duration-150 w-full sm:w-auto cursor-pointer"
+              className="group relative flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-emerald-700 transition-all duration-150 w-full sm:w-auto cursor-pointer"
             >
-              <FileText className="h-4.5 w-4.5 text-indigo-200 group-hover:text-white transition-colors" />
+              <FileText className="h-4.5 w-4.5 text-emerald-200 group-hover:text-white transition-colors" />
               Özgeçmişini AI ile Tara
             </button>
             <button
@@ -81,18 +81,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuth }) => {
           >
             {/* Feature 1 */}
             <div className="flex flex-col items-center p-6 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-4">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 mb-4">
                 <Cpu className="h-5 w-5" />
               </div>
               <h3 className="text-sm font-semibold text-slate-900">Derin AI Analizi</h3>
               <p className="mt-2 text-xs text-slate-500 text-center leading-relaxed">
-                Gemini LLM teknolojisi CV'nizdeki projeleri, deneyimleri ve yeteneklerinizi akıllıca yorumlar.
+                Gemini LLM teknolojisi CV'nizdeki projeleri, deneyimleri ogrenileri ve yeteneklerinizi akıllıca yorumlar.
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="flex flex-col items-center p-6 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-4">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 mb-4">
                 <BadgeCheck className="h-5 w-5" />
               </div>
               <h3 className="text-sm font-semibold text-slate-900">Uyum Raporu</h3>
@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAuth }) => {
 
             {/* Feature 3 */}
             <div className="flex flex-col items-center p-6 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-4">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 mb-4">
                 <Send className="h-5 w-5" />
               </div>
               <h3 className="text-sm font-semibold text-slate-900">Kolay Başvuru</h3>

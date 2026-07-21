@@ -166,7 +166,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
         <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Aktif İlanlar</span>
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-50 text-indigo-700">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
               <Briefcase className="h-4.5 w-4.5" />
             </div>
           </div>
@@ -180,7 +180,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
         <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Toplam Başvuru</span>
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-50 text-indigo-700">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
               <Users className="h-4.5 w-4.5" />
             </div>
           </div>
@@ -208,7 +208,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
         <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Mülakat Aşaması</span>
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-50 text-indigo-700">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
               <CheckCircle2 className="h-4.5 w-4.5" />
             </div>
           </div>
@@ -229,7 +229,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
               <h3 className="font-display text-base font-bold text-slate-900">İlan Yönetimi</h3>
               <button
                 onClick={() => setShowPostJob(!showPostJob)}
-                className="inline-flex items-center gap-1 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium py-1.5 px-3 rounded-lg shadow-sm transition cursor-pointer"
+                className="inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium py-1.5 px-3 rounded-lg shadow-sm transition cursor-pointer"
               >
                 <Plus className="h-3.5 w-3.5" />
                 İlan Ekle
@@ -249,7 +249,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                     value={jobTitle}
                     onChange={(e) => setJobTitle(e.target.value)}
                     placeholder="Örn: Senior Frontend Developer"
-                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-indigo-500 transition-all"
+                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-emerald-500 transition-all"
                   />
                 </div>
 
@@ -262,7 +262,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                       value={jobLocation}
                       onChange={(e) => setJobLocation(e.target.value)}
                       placeholder="İstanbul (Hibrit)"
-                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-indigo-500 transition-all"
+                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-emerald-500 transition-all"
                     />
                   </div>
                   <div>
@@ -270,7 +270,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                     <select
                       value={jobType}
                       onChange={(e) => setJobType(e.target.value as any)}
-                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-indigo-500 transition-all"
+                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-emerald-500 transition-all"
                     >
                       <option value="Uzaktan">Uzaktan</option>
                       <option value="Hibrit">Hibrit</option>
@@ -287,7 +287,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                       value={jobExperience}
                       onChange={(e) => setJobExperience(e.target.value)}
                       placeholder="Örn: 3-5 Yıl"
-                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-indigo-500 transition-all"
+                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-emerald-500 transition-all"
                     />
                   </div>
                   <div>
@@ -297,7 +297,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                       value={jobSalary}
                       onChange={(e) => setJobSalary(e.target.value)}
                       placeholder="Örn: Rekabetçi"
-                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-indigo-500 transition-all"
+                      className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-emerald-500 transition-all"
                     />
                   </div>
                 </div>
@@ -309,7 +309,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                     value={jobSkills}
                     onChange={(e) => setJobSkills(e.target.value)}
                     placeholder="React, TypeScript, CSS"
-                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-indigo-500 transition-all"
+                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-sm outline-none focus:border-emerald-500 transition-all"
                   />
                 </div>
 
@@ -321,7 +321,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                     value={jobDescription}
                     onChange={(e) => setJobDescription(e.target.value)}
                     placeholder="Görev tanımları ve aranan teknik kriterleri buraya yazın..."
-                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-indigo-500 transition-all"
+                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-emerald-500 transition-all"
                   />
                 </div>
 
@@ -336,7 +336,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                   <button
                     type="submit"
                     disabled={isPosting}
-                    className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium py-1.5 px-4 rounded-lg shadow-sm transition disabled:opacity-50 cursor-pointer"
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium py-1.5 px-4 rounded-lg shadow-sm transition disabled:opacity-50 cursor-pointer"
                   >
                     {isPosting ? 'Yayınlanıyor...' : 'İlanı Yayınla'}
                   </button>
@@ -352,11 +352,11 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                     <h4 className="text-sm font-semibold text-slate-900">{job.title}</h4>
                     <p className="text-[11px] text-slate-400 mt-0.5">{job.location} &bull; {job.type}</p>
                     <div className="flex items-center gap-2 mt-2.5">
-                      <span className="inline-flex items-center rounded-md bg-slate-50 border border-slate-200/70 px-1.5 py-0.5 text-[10px] font-medium text-slate-600">
+                       <span className="inline-flex items-center rounded-md bg-slate-50 border border-slate-200/70 px-1.5 py-0.5 text-[10px] font-medium text-slate-600">
                         {job.applicationCount} başvuru
                       </span>
                       {job.candidateMatchesCount > 0 && (
-                        <span className="inline-flex items-center rounded-md bg-indigo-50 border border-indigo-100/50 px-1.5 py-0.5 text-[10px] font-medium text-indigo-700">
+                        <span className="inline-flex items-center rounded-md bg-emerald-50 border border-emerald-100/50 px-1.5 py-0.5 text-[10px] font-medium text-emerald-700">
                           {job.candidateMatchesCount} yüksek eşleşme
                         </span>
                       )}
@@ -393,7 +393,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                   return (
                     <div 
                       key={app.id} 
-                      className="group border border-slate-100 rounded-2xl p-5 hover:border-indigo-100 hover:shadow-sm transition duration-150 bg-white"
+                      className="group border border-slate-100 rounded-2xl p-5 hover:border-emerald-100 hover:shadow-sm transition duration-150 bg-white"
                     >
                       <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
                         
@@ -407,14 +407,14 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                               referrerPolicy="no-referrer"
                             />
                           ) : (
-                            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-indigo-50 text-indigo-700 font-semibold text-sm">
+                            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 font-semibold text-sm">
                               {app.candidateName.charAt(0).toUpperCase()}
                             </div>
                           )}
                           <div>
                             <h4 className="text-sm font-semibold text-slate-900">{app.candidateName}</h4>
                             <p className="text-xs text-slate-500 font-medium">{app.candidateTitle}</p>
-                            <p className="text-[10px] font-semibold text-indigo-600 mt-1 uppercase tracking-wider">
+                            <p className="text-[10px] font-semibold text-emerald-600 mt-1 uppercase tracking-wider">
                               Pozisyon: {appliedJob?.title || 'Pozisyon'}
                             </p>
                           </div>
@@ -424,9 +424,9 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                         <div className="flex items-center gap-2 self-start sm:self-center">
                           <button
                             onClick={() => handleViewMatch(app)}
-                            className="flex items-center gap-1 border border-indigo-100 bg-indigo-50/50 hover:bg-indigo-100 text-indigo-750 text-xs font-medium py-1.5 px-3 rounded-lg transition cursor-pointer"
+                            className="flex items-center gap-1 border border-emerald-100 bg-emerald-50/50 hover:bg-emerald-100 text-emerald-750 text-xs font-medium py-1.5 px-3 rounded-lg transition cursor-pointer"
                           >
-                            <Sparkles className="h-3.5 w-3.5 text-indigo-600" />
+                            <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
                             AI Uyum: %{app.matchScore}
                           </button>
                         </div>
@@ -448,7 +448,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                               onClick={() => handleStatusChange(app.id, status)}
                               className={`py-1 px-2.5 text-[10px] font-medium rounded-lg transition border cursor-pointer ${
                                 app.status === status 
-                                  ? 'bg-indigo-600 text-white border-indigo-600' 
+                                  ? 'bg-emerald-600 text-white border-emerald-600' 
                                   : 'bg-white hover:bg-slate-50 text-slate-600 border-slate-200'
                               }`}
                             >
@@ -476,9 +476,9 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
           <div className="relative w-full max-w-2xl overflow-hidden rounded-3xl bg-white shadow-xl border border-slate-100 transition-all max-h-[90vh] flex flex-col animate-in fade-in duration-200">
             
             {/* Modal Header */}
-            <div className="p-6 border-b border-slate-100 flex items-center justify-between bg-gradient-to-r from-indigo-50/30 via-white to-white">
+            <div className="p-6 border-b border-slate-100 flex items-center justify-between bg-gradient-to-r from-emerald-50/30 via-white to-white">
               <div>
-                <span className="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-md uppercase">
+                <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md uppercase">
                   Aday Analizi
                 </span>
                 <h3 className="font-display text-base font-bold text-slate-900 mt-1">
@@ -497,7 +497,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
             <div className="p-6 overflow-y-auto space-y-6 flex-1">
               {isLoadingMatch ? (
                 <div className="flex flex-col items-center py-12">
-                  <RefreshCw className="h-8 w-8 text-indigo-600 animate-spin mb-4" />
+                  <RefreshCw className="h-8 w-8 text-emerald-600 animate-spin mb-4" />
                   <p className="text-sm font-semibold text-slate-900">Yapay Zeka Analiz Ediyor...</p>
                   <p className="text-xs text-slate-400 mt-1">Gemini kriterleri iş ilanına göre tartıyor</p>
                 </div>
@@ -506,16 +506,16 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                   {/* Score circle layout */}
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-slate-50/50 p-6 rounded-2xl border border-slate-100">
                     <div className="md:col-span-4 flex flex-col items-center">
-                      <div className="relative flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-sm border-4 border-indigo-500">
+                      <div className="relative flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-sm border-4 border-emerald-500">
                         <span className="font-mono text-2xl font-bold text-slate-950">%{activeMatch.matchScore}</span>
-                        <div className="absolute -bottom-2 bg-indigo-600 text-white text-[9px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                        <div className="absolute -bottom-2 bg-emerald-600 text-white text-[9px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
                           Yapay Zeka
                         </div>
                       </div>
                     </div>
                     
                     <div className="md:col-span-8 space-y-2">
-                      <p className="text-xs font-semibold text-indigo-950 uppercase tracking-wider">MÜLAKAT ÖNCESİ DEĞERLENDİRME</p>
+                      <p className="text-xs font-semibold text-emerald-950 uppercase tracking-wider">MÜLAKAT ÖNCESİ DEĞERLENDİRME</p>
                       <p className="text-sm text-slate-600 leading-relaxed font-medium">
                         {activeMatch.description}
                       </p>
@@ -544,7 +544,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                         <div className="flex items-center justify-between mt-2">
                           <span className="text-lg font-bold text-slate-900">%{activeMatch.experienceAlignment}</span>
                           <div className="h-1.5 w-16 bg-slate-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-indigo-500" style={{ width: `${activeMatch.experienceAlignment}%` }} />
+                            <div className="h-full bg-teal-500" style={{ width: `${activeMatch.experienceAlignment}%` }} />
                           </div>
                         </div>
                       </div>
@@ -555,7 +555,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                         <div className="flex items-center justify-between mt-2">
                           <span className="text-lg font-bold text-slate-900">%{activeMatch.culturalAlignment}</span>
                           <div className="h-1.5 w-16 bg-slate-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-indigo-500" style={{ width: `${activeMatch.culturalAlignment}%` }} />
+                            <div className="h-full bg-green-500" style={{ width: `${activeMatch.culturalAlignment}%` }} />
                           </div>
                         </div>
                       </div>
@@ -569,7 +569,7 @@ export const EmployerDashboard: React.FC<EmployerDashboardProps> = ({ currentUse
                     {/* Strong points */}
                     <div className="space-y-2.5">
                       <h4 className="text-xs font-semibold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5">
-                        <BadgeCheck className="h-4 w-4 text-emerald-600" />
+                        <BadgeCheck className="h-4.5 w-4.5 text-emerald-600" />
                         Adayın Öne Çıkan Yönleri
                       </h4>
                       <ul className="space-y-2">

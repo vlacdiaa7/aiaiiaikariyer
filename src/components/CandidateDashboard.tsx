@@ -246,11 +246,11 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                 <img 
                   src={currentUser.avatarUrl} 
                   alt={currentUser.fullName} 
-                  className="h-14 w-14 rounded-2xl object-cover ring-2 ring-indigo-50"
+                  className="h-14 w-14 rounded-2xl object-cover ring-2 ring-emerald-50"
                   referrerPolicy="no-referrer"
                 />
               ) : (
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 font-bold text-xl">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 font-bold text-xl">
                   {currentUser.fullName.charAt(0).toUpperCase()}
                 </div>
               )}
@@ -261,21 +261,21 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
             </div>
 
             {/* Profile Strength */}
-            <div className="mb-6 rounded-2xl bg-indigo-50/40 p-4 border border-indigo-100/30">
-              <div className="flex items-center justify-between text-xs font-semibold text-indigo-950 mb-1.5">
+            <div className="mb-6 rounded-2xl bg-emerald-50/40 p-4 border border-emerald-100/30">
+              <div className="flex items-center justify-between text-xs font-semibold text-emerald-950 mb-1.5">
                 <span className="flex items-center gap-1">
-                  <Sparkles className="h-3.5 w-3.5 text-indigo-600 animate-spin" />
+                  <Sparkles className="h-3.5 w-3.5 text-emerald-600 animate-spin" />
                   Profil Gücü
                 </span>
                 <span>%{currentUser.profileStrength || 20}</span>
               </div>
-              <div className="h-1.5 w-full bg-indigo-100/50 rounded-full overflow-hidden">
+              <div className="h-1.5 w-full bg-emerald-100/50 rounded-full overflow-hidden">
                 <div 
-                  className="h-full bg-indigo-600 rounded-full transition-all duration-500" 
+                  className="h-full bg-emerald-600 rounded-full transition-all duration-500" 
                   style={{ width: `${currentUser.profileStrength || 20}%` }}
                 />
               </div>
-              <p className="text-[10px] text-indigo-700/80 font-medium mt-1.5 leading-normal">
+              <p className="text-[10px] text-emerald-700/80 font-medium mt-1.5 leading-normal">
                 {currentUser.profileStrength && currentUser.profileStrength >= 80 
                   ? 'Harika! Özgeçmişiniz başarıyla analiz edildi, ilanlarla eşleşmeye hazırsınız.' 
                   : 'Yapay zeka eşleştirme oranını yükseltmek için CV yükleyin.'}
@@ -288,7 +288,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
               onDragOver={handleDrag}
               onDragLeave={handleDrag}
               onDrop={handleDrop}
-              className={`relative border-2 border-dashed rounded-2xl p-6 text-center cursor-pointer transition-all ${dragActive ? 'border-indigo-600 bg-indigo-50/20' : 'border-slate-200 hover:border-slate-300 bg-slate-50/30'}`}
+              className={`relative border-2 border-dashed rounded-2xl p-6 text-center cursor-pointer transition-all ${dragActive ? 'border-emerald-600 bg-emerald-50/20' : 'border-slate-200 hover:border-slate-300 bg-slate-50/30'}`}
             >
               <input 
                 type="file" 
@@ -300,7 +300,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
               <label htmlFor="cv-file-input" className="cursor-pointer">
                 {isParsing ? (
                   <div className="flex flex-col items-center py-3">
-                    <RefreshCw className="h-7 w-7 text-indigo-600 animate-spin mb-3" />
+                    <RefreshCw className="h-7 w-7 text-emerald-600 animate-spin mb-3" />
                     <span className="text-xs font-semibold text-slate-900">Özgeçmiş Analiz Ediliyor...</span>
                     <span className="text-[10px] text-slate-400 mt-1">Gemini LLM yetenekleri çıkartıyor</span>
                   </div>
@@ -320,7 +320,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
           {/* Quick Profile Editor */}
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
             <h4 className="font-display text-sm font-bold text-slate-900 mb-4 flex items-center gap-1.5">
-              <Award className="h-4 w-4 text-indigo-500" />
+              <Award className="h-4 w-4 text-emerald-500" />
               Profil Bilgileri
             </h4>
             <form onSubmit={handleSaveProfile} className="space-y-4">
@@ -330,7 +330,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                   type="text" 
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
-                  className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-indigo-500 transition-all"
+                  className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-emerald-500 transition-all"
                 />
               </div>
 
@@ -341,7 +341,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                   value={title}
                   placeholder="Örn: Frontend Developer"
                   onChange={(e) => setTitle(e.target.value)}
-                  className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-indigo-500 transition-all"
+                  className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-emerald-500 transition-all"
                 />
               </div>
 
@@ -352,7 +352,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                     type="number" 
                     value={experienceYears}
                     onChange={(e) => setExperienceYears(Number(e.target.value))}
-                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-indigo-500 transition-all"
+                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-emerald-500 transition-all"
                   />
                 </div>
                 <div>
@@ -362,7 +362,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                     value={location}
                     placeholder="İstanbul"
                     onChange={(e) => setLocation(e.target.value)}
-                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-indigo-500 transition-all"
+                    className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-emerald-500 transition-all"
                   />
                 </div>
               </div>
@@ -374,7 +374,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                   value={skillsText}
                   placeholder="React, TypeScript, Node.js"
                   onChange={(e) => setSkillsText(e.target.value)}
-                  className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-indigo-500 transition-all"
+                  className="block w-full rounded-lg border border-slate-200 bg-white py-2 px-3 text-xs outline-none focus:border-emerald-500 transition-all"
                 />
               </div>
 
@@ -394,23 +394,23 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
           
           {/* Dashboard Application History banner */}
           {applications.length > 0 && (
-            <div className="rounded-3xl border border-indigo-100/50 bg-indigo-50/20 p-6">
-              <h4 className="font-display text-sm font-bold text-indigo-950 mb-3 flex items-center gap-1.5">
-                <CheckCircle2 className="h-4.5 w-4.5 text-indigo-600" />
+            <div className="rounded-3xl border border-emerald-100/50 bg-emerald-50/20 p-6">
+              <h4 className="font-display text-sm font-bold text-emerald-950 mb-3 flex items-center gap-1.5">
+                <CheckCircle2 className="h-4.5 w-4.5 text-emerald-600" />
                 Mevcut Başvurularınız ({applications.length})
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {applications.map((app) => {
                   const matchingJob = jobs.find(j => j.id === app.jobId);
                   return (
-                    <div key={app.id} className="bg-white rounded-2xl border border-indigo-100/30 p-4 flex items-center justify-between shadow-sm">
+                    <div key={app.id} className="bg-white rounded-2xl border border-emerald-100/30 p-4 flex items-center justify-between shadow-sm">
                       <div>
                         <p className="text-xs font-bold text-slate-900">{matchingJob?.title || 'Pozisyon'}</p>
                         <p className="text-[10px] text-slate-400 font-medium">{matchingJob?.company || 'Şirket'}</p>
                         <div className="flex items-center gap-1.5 mt-2">
                           <span className={`inline-flex items-center rounded px-1.5 py-0.5 text-[9px] font-bold ring-1 ring-inset ${
                             app.status === 'Yeni' ? 'bg-amber-50 text-amber-700 ring-amber-600/10' :
-                            app.status === 'Mülakat' ? 'bg-indigo-50 text-indigo-700 ring-indigo-600/10' :
+                            app.status === 'Mülakat' ? 'bg-emerald-50 text-emerald-700 ring-emerald-600/10' :
                             app.status === 'Kabul Edildi' ? 'bg-emerald-50 text-emerald-700 ring-emerald-600/10' :
                             'bg-slate-50 text-slate-600 ring-slate-500/10'
                           }`}>
@@ -424,7 +424,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                       
                       <button
                         onClick={() => matchingJob && viewMatchReport(matchingJob)}
-                        className="flex flex-col items-center justify-center py-1.5 px-2.5 rounded-xl bg-indigo-50/60 hover:bg-indigo-50 text-indigo-700 transition cursor-pointer"
+                        className="flex flex-col items-center justify-center py-1.5 px-2.5 rounded-xl bg-emerald-50/60 hover:bg-emerald-50 text-emerald-700 transition cursor-pointer"
                       >
                         <span className="text-[8px] font-bold uppercase tracking-wider">Eşleşme</span>
                         <span className="text-sm font-bold font-mono">%{app.matchScore}</span>
@@ -450,7 +450,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                   <button
                     key={type}
                     onClick={() => setFilterType(type)}
-                    className={`py-1 px-2.5 text-[10px] font-semibold rounded-md transition cursor-pointer ${filterType === type ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                    className={`py-1 px-2.5 text-[10px] font-semibold rounded-md transition cursor-pointer ${filterType === type ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                   >
                     {type === 'All' ? 'Tümü' : type}
                   </button>
@@ -468,7 +468,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Pozisyon, şirket veya yetenek arayın..."
-                className="block w-full rounded-xl border border-slate-200 bg-slate-50/50 py-2.5 pl-9 pr-4 text-xs text-slate-900 focus:border-indigo-500 focus:bg-white outline-none transition-all"
+                className="block w-full rounded-xl border border-slate-200 bg-slate-50/50 py-2.5 pl-9 pr-4 text-xs text-slate-900 focus:border-emerald-500 focus:bg-white outline-none transition-all"
               />
             </div>
 
@@ -486,12 +486,12 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                   return (
                     <div 
                       key={job.id} 
-                      className="group border border-slate-100 rounded-2xl p-5 hover:border-indigo-100 hover:shadow-sm hover:shadow-indigo-50/10 transition-all duration-200 bg-white"
+                      className="group border border-slate-100 rounded-2xl p-5 hover:border-emerald-100 hover:shadow-sm hover:shadow-emerald-50/10 transition-all duration-200 bg-white"
                     >
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                         <div>
                           <div className="flex items-center gap-2 mb-1.5">
-                            <span className="text-[10px] font-bold text-indigo-600 bg-indigo-50/50 px-1.5 py-0.5 rounded">
+                            <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50/50 px-1.5 py-0.5 rounded">
                               {job.company}
                             </span>
                             <span className="text-[10px] font-semibold text-slate-400 flex items-center gap-1">
@@ -500,7 +500,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                             </span>
                           </div>
                           
-                          <h4 className="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                          <h4 className="text-sm font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
                             {job.title}
                           </h4>
                           
@@ -527,7 +527,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                           {isApplied ? (
                             <button
                               onClick={() => viewMatchReport(job)}
-                              className="inline-flex items-center gap-1 bg-indigo-50/60 hover:bg-indigo-50 text-indigo-700 text-[10px] font-bold py-1.5 px-3.5 rounded-lg transition cursor-pointer"
+                              className="inline-flex items-center gap-1 bg-emerald-50/60 hover:bg-emerald-50 text-emerald-700 text-[10px] font-bold py-1.5 px-3.5 rounded-lg transition cursor-pointer"
                             >
                               <Sparkles className="h-3 w-3" />
                               Uyum Raporu
@@ -536,7 +536,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                             <button
                               onClick={() => handleApply(job)}
                               disabled={isApplying}
-                              className="inline-flex items-center gap-1 bg-indigo-600 hover:bg-indigo-700 text-white text-[10px] font-bold py-1.5 px-3.5 rounded-lg shadow-sm transition disabled:opacity-50 cursor-pointer"
+                              className="inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-bold py-1.5 px-3.5 rounded-lg shadow-sm transition disabled:opacity-50 cursor-pointer"
                             >
                               Başvur & Eşleştir
                               <ArrowUpRight className="h-3 w-3" />
@@ -562,9 +562,9 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
           <div className="relative w-full max-w-2xl overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-gray-900/5 transition-all max-h-[90vh] flex flex-col">
             
             {/* Modal Header */}
-            <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-gradient-to-r from-indigo-50/50 via-white to-white">
+            <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-gradient-to-r from-emerald-50/50 via-white to-white">
               <div>
-                <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-md uppercase">
+                <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md uppercase">
                   {selectedJob.company}
                 </span>
                 <h3 className="font-display text-lg font-extrabold text-gray-900 mt-1">
@@ -583,25 +583,25 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
             <div className="p-6 overflow-y-auto space-y-6 flex-1">
               {isLoadingMatch ? (
                 <div className="flex flex-col items-center py-12">
-                  <RefreshCw className="h-10 w-10 text-indigo-600 animate-spin mb-4" />
+                  <RefreshCw className="h-10 w-10 text-emerald-600 animate-spin mb-4" />
                   <p className="text-base font-bold text-gray-900">Yapay Zeka Analiz Ediyor...</p>
                   <p className="text-xs text-gray-400 mt-1">Gemini CV ve İş İlanı uyum kriterlerini hesaplıyor</p>
                 </div>
               ) : activeMatch ? (
                 <>
                   {/* Score circle layout */}
-                  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-indigo-50/20 p-6 rounded-2xl border border-indigo-100/40">
+                  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-emerald-50/20 p-6 rounded-2xl border border-emerald-100/40">
                     <div className="md:col-span-4 flex flex-col items-center">
-                      <div className="relative flex items-center justify-center h-28 w-28 rounded-full bg-white shadow-md border-4 border-indigo-500">
-                        <span className="font-mono text-3xl font-black text-indigo-950">%{activeMatch.matchScore}</span>
-                        <div className="absolute -bottom-2.5 bg-indigo-600 text-white text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                      <div className="relative flex items-center justify-center h-28 w-28 rounded-full bg-white shadow-md border-4 border-emerald-500">
+                        <span className="font-mono text-3xl font-black text-emerald-950">%{activeMatch.matchScore}</span>
+                        <div className="absolute -bottom-2.5 bg-emerald-600 text-white text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">
                           Yapay Zeka
                         </div>
                       </div>
                     </div>
                     
                     <div className="md:col-span-8 space-y-2">
-                      <p className="text-xs font-bold text-indigo-950 uppercase tracking-wider">GENEL DEĞERLENDİRME</p>
+                      <p className="text-xs font-bold text-emerald-950 uppercase tracking-wider">GENEL DEĞERLENDİRME</p>
                       <p className="text-sm text-gray-700 leading-relaxed font-medium">
                         {activeMatch.description}
                       </p>
@@ -630,7 +630,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                         <div className="flex items-center justify-between mt-2">
                           <span className="text-lg font-black text-gray-900">%{activeMatch.experienceAlignment}</span>
                           <div className="h-1.5 w-16 bg-gray-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-indigo-500" style={{ width: `${activeMatch.experienceAlignment}%` }} />
+                            <div className="h-full bg-teal-500" style={{ width: `${activeMatch.experienceAlignment}%` }} />
                           </div>
                         </div>
                       </div>
@@ -641,7 +641,7 @@ export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ currentU
                         <div className="flex items-center justify-between mt-2">
                           <span className="text-lg font-black text-gray-900">%{activeMatch.culturalAlignment}</span>
                           <div className="h-1.5 w-16 bg-gray-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-violet-500" style={{ width: `${activeMatch.culturalAlignment}%` }} />
+                            <div className="h-full bg-green-500" style={{ width: `${activeMatch.culturalAlignment}%` }} />
                           </div>
                         </div>
                       </div>
